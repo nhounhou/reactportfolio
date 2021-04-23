@@ -1,6 +1,13 @@
 import React, { useState } from "react";
-import Home from "./pages/Home";
+import { render } from "react-dom";
+// import Home from "./pages/Home";
 import AlertContext from "./utils/AlertContext";
+
+import { BrowserRouter as Router } from "react-router-dom";
+// import "./global-styles";
+
+import Header from "./components/Header";
+import Container from "./components/Container";
 
 function App() {
 
@@ -17,7 +24,13 @@ function App() {
   // Here we are overwritting the context object to be equal to the state of App
   return (
     <AlertContext.Provider value={pageState}>
-      <Home />
+      {/* <Home /> */}
+      <Router>
+        <div>
+          <Header />
+          <Container />
+        </div>
+      </Router>
     </AlertContext.Provider>
   );
 }

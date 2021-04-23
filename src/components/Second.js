@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
+import styled from "styled-components";
 import Project from "./Project";
 import AlertContext from "../utils/AlertContext";
 
-const Content = () => {
-  const alert = useContext(AlertContext);
+function Second() {
+    const alert = useContext(AlertContext);
   return (
-    <div className="text-center">
+    <Wrapper>
+      <span>Portfolio</span>
+      <section>
       <row>
         <button onClick={() => alert.onClick("Portfolio Homework", true)} className="btn btn-primary mx-3">
           Portfolio
@@ -60,8 +63,24 @@ const Content = () => {
       <Project style={{ opacity: alert.display ? 1 : 0 }} type={alert.theme}>
         You pressed a {alert.theme} button!
       </Project>
-    </div>
+      </section>
+    </Wrapper>
   );
-};
+}
 
-export default Content;
+const Wrapper = styled.div`
+  min-height: calc(100vh - 50px);
+  background-color: #00bfff;
+  padding: 20px;
+
+  span {
+    color: #fff;
+    font-size: 40px;
+  }
+
+  section {
+    color: #fff;
+  }
+`;
+
+export default Second;

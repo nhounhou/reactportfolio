@@ -1,6 +1,6 @@
 import React from "react";
 
-const Alert = props => {
+const Project = props => {
   return (
     <div
       role="alert"
@@ -12,4 +12,4 @@ const Alert = props => {
   );
 };
 
-export default Alert;
+export default Project;
