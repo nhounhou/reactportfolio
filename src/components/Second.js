@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import Project from "./Project";
 import AlertContext from "../utils/AlertContext";
+import Footer from './Footer';
 
 function Second() {
     const alert = useContext(AlertContext);
@@ -64,6 +65,7 @@ function Second() {
         You pressed a {alert.theme} button!
       </Project>
       </section>
+      <Footer />
     </Wrapper>
   );
 }

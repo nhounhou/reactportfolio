@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         <section>
         <p>Entry Level Full Stack developer</p>
         </section>
+        <Footer />
     </Wrapper>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Footer from './Footer';
 
 function Third() {
   return (
@@ -24,6 +25,7 @@ function Third() {
           et commodo orci.
         </p>
       </section>
+      <Footer />
     </Wrapper>
   );
 }
