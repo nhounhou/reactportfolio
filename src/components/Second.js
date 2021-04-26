@@ -192,7 +192,12 @@ var tableOfHW = [
     image: 'images/ResponsivePortfolio.jpg',
     github: 'https://github.com/nhounhou/Portfolio',
     deploy: 'https://nhounhou.github.io/Portfolio/index.html',
-  },
+    JS: 84,
+    HTML: 9,
+    CSS: 7,
+    API: 0,
+    Other: 0,
+},
 ]
 
 function Second() {
