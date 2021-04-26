@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Project from "./Project";
 import AlertContext from "../utils/AlertContext";
 import Footer from './Footer';
+import { FaGit, FaLaptopCode } from 'react-icons/fa';
 import './second.css';
 
 var tableOfHW = [
@@ -17,6 +18,7 @@ var tableOfHW = [
     CSS: 17,
     API: 0,
     Other: 0,
+    FrameName: ''
   },
   {
     title: 'Password Generator',
@@ -29,6 +31,7 @@ var tableOfHW = [
     CSS: 22,
     API: 0,
     Other: 0,
+    FrameName: ''
   },
   {
     title: 'Coding Quizz',
@@ -41,6 +44,7 @@ var tableOfHW = [
     CSS: 5,
     API: 0,
     Other: 0,
+    FrameName: ''
 },
   {
     title: 'Work Day Scheduler',
@@ -53,6 +57,7 @@ var tableOfHW = [
     CSS: 12,
     API: 0,
     Other: 0,
+    FrameName: ''
 },
   {
     title: 'Weather Dashboard',
@@ -65,6 +70,7 @@ var tableOfHW = [
     CSS: 10,
     API: 2,
     Other: 0,
+    FrameName: ''
 },
   {
     title: 'Get Coupons',
@@ -72,11 +78,12 @@ var tableOfHW = [
     image: 'images/Project1.jpg',
     github: 'https://github.com/Callingrapher/ProjectTheFirst',
     deploy: 'https://callingrapher.github.io/ProjectTheFirst',
-    JS: 74,
-    HTML: 19,
-    CSS: 7,
-    API: 0,
-    Other: 0,
+    JS: 32,
+    HTML: 39,
+    CSS: 14,
+    API: 2,
+    Other: 15,
+    FrameName: 'Foundation'
 },
   {
     title: 'Good Readme Generator',
@@ -89,6 +96,7 @@ var tableOfHW = [
     CSS: 0,
     API: 0,
     Other: 0,
+    FrameName: ''
 },
   {
     title: 'Team Profile Generator',
@@ -101,6 +109,7 @@ var tableOfHW = [
     CSS: 7,
     API: 0,
     Other: 0,
+    FrameName: ''
 },
   {
     title: 'Note Taker',
@@ -113,6 +122,7 @@ var tableOfHW = [
     CSS: 10,
     API: 0,
     Other: 0,
+    FrameName: ''
 },
   {
     title: 'Employee Tracker',
@@ -125,6 +135,7 @@ var tableOfHW = [
     CSS: 0,
     API: 0,
     Other: 0,
+    FrameName: ''
 },
   {
     title: 'Eat-Da-Burger',
@@ -137,6 +148,7 @@ var tableOfHW = [
     CSS: 6,
     API: 0,
     Other: 0,
+    FrameName: ''
 },
   {
     title: 'Subscriptions Tracker',
@@ -149,6 +161,7 @@ var tableOfHW = [
     CSS: 20,
     API: 0,
     Other: 70,
+    FrameName: 'TailWind'
 },
   {
     title: 'Fitness Tracker',
@@ -161,6 +174,7 @@ var tableOfHW = [
     CSS: 22,
     API: 0,
     Other: 0,
+    FrameName: ''
 },
   {
     title: 'Progressive Budget',
@@ -173,6 +187,7 @@ var tableOfHW = [
     CSS: 7,
     API: 0,
     Other: 0,
+    FrameName: ''
 },
   {
     title: 'Employee Directory',
@@ -185,6 +200,7 @@ var tableOfHW = [
     CSS: 5,
     API: 0,
     Other: 0,
+    FrameName: ''
 },
   {
     title: 'React Portfolio',
@@ -197,37 +213,43 @@ var tableOfHW = [
     CSS: 7,
     API: 0,
     Other: 0,
+    FrameName: ''
 },
 ]
 
 function Second() {
-  function icone(type,num){
+  function icone(type,num,name){
       switch (type) {
       case 'JS':
         if (num !== 0) {
           const render=`https://img.shields.io/badge/JavaScript-${num}%25-orange`
-          return <img src={render}></img>
+          return <img src={render} alt={type}></img>
         };
+        break;
       case 'HTML':
         if (num !== 0) {
           const render=`https://img.shields.io/badge/HTML-${num}%25-brightgreen?style=plastic&logo=HTML5`
-          return <img src={render}></img>
+          return <img src={render} alt={type}></img>
         }
+        break;
       case 'CSS':
         if (num !== 0) {
           const render=`https://img.shields.io/badge/CSS-${num}%25-blue?style=plastic&logo=CSS3`
-          return <img src={render}></img>
+          return <img src={render} alt={type}></img>
         }
+        break;
     case 'API':
         if (num !== 0) {
           const render=`https://img.shields.io/badge/APIs-${num}-purple?style=plastic&logo=appveyor`
-          return <img src={render}></img>
+          return <img src={render} alt={type}></img>
         }
-    case 'Frame':                                        
+        break;
+    case 'Other':                                        
         if (num !== 0){
-          const render=`https://img.shields.io/badge/tailwind-${num}%25-blue`
-          return <img src={render}></img>
+          const render=`https://img.shields.io/badge/${name}-${num}%25-blue`
+          return <img src={render} alt={type}></img>
         }
+        break;
     }
   };
 
@@ -242,20 +264,18 @@ function Second() {
             <row>
               <div>
                 <h1>{item.title}</h1>
-                <h4>{item.description}</h4>
-                <br></br>
-                <img src={item.image} width='auto' height='300px' alt={item.title}></img>
-                <br></br>
-                <a href={item.github} target='_blank'>Github link</a>
-                <br></br>
-                <a href={item.deploy} target='_blank'>Deployment link</a>
+                <h3>{item.description}</h3>
+                <img className='HWPicture' src={item.image} width='auto' height='300px' alt={item.title}></img>
+                <h4>Links</h4>
+                <h5>Github <a href={item.github} target='_blank'><FaGit/> </a></h5>
+                <h5>Deployment <a href={item.deploy} target='_blank'><FaLaptopCode/> </a></h5>
               </div>
               <div>
-                {icone('JS',item.JS)}
-                {icone('HTML',item.HTML)}
-                {icone('CSS',item.CSS)}
-                {icone('API',item.API)}
-                {icone('Frame',item.Other)}
+                {icone('JS',item.JS,'')}
+                {icone('HTML',item.HTML,'')}
+                {icone('CSS',item.CSS,'')}
+                {icone('API',item.API,'')}
+                {icone('Frame',item.Other,item.FrameName)}
               </div>
             </row>
           </div>
