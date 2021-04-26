@@ -13,11 +13,16 @@ function App() {
 
   const [pageState, setPageState] = useState({
     display: false,
-    theme: "success",
-    onClick: (theme, display) => {
+    theme: 'success',
+    title: '',
+    description: '',
+    image: '',
+    github: '',
+    deploy: '',
+    onClick: (theme, display, title, description, image, github, deploy) => {
       // Remember, the setter method on state does not merge like this.setState does
       // We use the spread operator so that we don't lose our onClick method whenever the state is updated.
-      setPageState({ ...pageState, theme, display });
+      setPageState({ ...pageState, theme, display, title, description, image, github, deploy });
     }
   });
   // App component that provides initial context values

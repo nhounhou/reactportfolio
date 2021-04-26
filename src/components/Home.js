@@ -5,7 +5,7 @@ import Footer from "./Footer";
 function Home() {
   return (
     <Wrapper>
-        <img src="Headshot.jpg" alt="headshot" width="200" height="300" ></img>
+        <img src="images/HeadshotNew.jpg" alt="headshot" width="auto" height="300" ></img>
         <div className="title">Welcome to Michel Nhouyvanisvong Page App!</div>
         <section>
         <p>Entry Level Full Stack developer</p>
