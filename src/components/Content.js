@@ -2,11 +2,13 @@ import React, { useContext } from "react";
 import Project from "./Project";
 import AlertContext from "../utils/AlertContext";
 
-const Content = () => {
+const Content = (props) => {
+  console.log('props',props)
   const alert = useContext(AlertContext);
   return (
     <div className="text-center">
-      <row>
+      <h1>{props.title}</h1>
+      {/* <row>
         <button onClick={() => alert.onClick("Portfolio Homework", true)} className="btn btn-primary mx-3">
           Portfolio
         </button>
@@ -59,7 +61,7 @@ const Content = () => {
       </row>
       <Project style={{ opacity: alert.display ? 1 : 0 }} type={alert.theme}>
         You pressed a {alert.theme} button!
-      </Project>
+      </Project> */}
     </div>
   );
 };

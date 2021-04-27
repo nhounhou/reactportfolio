@@ -9,7 +9,16 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header";
 import Container from "./components/Container";
 
+import Modal from "react-modal";
+
+Modal.setAppElement("#root");
+
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleModal() {
+    setIsOpen(!isOpen);
+  }
 
   const [pageState, setPageState] = useState({
     display: false,
