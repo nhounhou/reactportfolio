@@ -8,7 +8,7 @@ import { FaGit, FaLaptopCode } from 'react-icons/fa';
 var tableOfHW = [
   {
     title: 'Responsive Portfolio',
-    description: 'gather all the project that have been made during the BootCamp (introduction HTML and CSS)',
+    description: 'Gather all the project that have been made during the BootCamp (introduction to HTML and CSS) and also personnal information',
     image: '/images/ResponsivePortfolio.jpg',
     github: 'https://github.com/nhounhou/Portfolio',
     deploy: 'https://nhounhou.github.io/Portfolio/index.html',
@@ -21,7 +21,7 @@ var tableOfHW = [
   },
   {
     title: 'Password Generator',
-    description: 'with choice of settings parameters (Introduction to JavaScript ES5)',
+    description: 'With choice of settings parameters (Introduction to JavaScript ES5)',
     image: '/images/PasswordGenerator.jpg',
     github: 'https://github.com/nhounhou/PasswordGenerator',
     deploy: 'https://nhounhou.github.io/PasswordGenerator/index.html',
@@ -47,7 +47,7 @@ var tableOfHW = [
   },
   {
     title: 'Work Day Scheduler',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'Create, Update event for the current work day (JQuery and use of dynamic DOM Element)',
     image: '/images/WorkDayScheduler.jpg',
     github: 'https://github.com/nhounhou/WorkDayScheduler',
     deploy: 'https://nhounhou.github.io/WorkDayScheduler/',
@@ -60,7 +60,7 @@ var tableOfHW = [
   },
   {
     title: 'Weather Dashboard',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'Display current weather information for a selected city, with a 5 day forecast (call OpenWeather API)',
     image: '/images/WeatherDash.jpg',
     github: 'https://github.com/nhounhou/WeatherDashBoard',
     deploy: 'https://nhounhou.github.io/WeatherDashBoard/',
@@ -73,7 +73,7 @@ var tableOfHW = [
   },
   {
     title: 'Get Coupons',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'Get a list of coupons, and a list of selected stores near you (Call 2 APIs and use of Foundation CSS framework)',
     image: '/images/Project1.jpg',
     github: 'https://github.com/Callingrapher/ProjectTheFirst',
     deploy: 'https://callingrapher.github.io/ProjectTheFirst',
@@ -86,7 +86,7 @@ var tableOfHW = [
   },
   {
     title: 'Good Readme Generator',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'CLI application that generate a Readme file from Github repo (introduction to Node.js)',
     image: '/images/ReadmeGen.gif',
     github: 'https://github.com/nhounhou/ReadmeGenerator',
     deploy: 'https://nhounhou.github.io/ReadmeGenerator/',
@@ -99,7 +99,7 @@ var tableOfHW = [
   },
   {
     title: 'Team Profile Generator',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'CLI application to generate a team profile web page (OOP)',
     image: '/images/teamProfile.jpg',
     github: 'https://github.com/nhounhou/TeamProfileGenerator',
     deploy: '',
@@ -112,7 +112,7 @@ var tableOfHW = [
   },
   {
     title: 'Note Taker',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'Web application to gather miscellenious notes (Express.js)',
     image: '/images/noteTaker.jpg',
     github: 'https://github.com/nhounhou/NoteTaker',
     deploy: 'https://bcsnotetaker.herokuapp.com/',
@@ -125,7 +125,7 @@ var tableOfHW = [
   },
   {
     title: 'Employee Tracker',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'CLI application to handle company Employees list (MySQL)',
     image: '/images/employeeTracker.jpg',
     github: 'https://github.com/nhounhou/EmployeeTracker',
     deploy: '',
@@ -138,7 +138,7 @@ var tableOfHW = [
   },
   {
     title: 'Eat-Da-Burger',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'Web application to keep track of your burgers craving (Handlebars, ORM)',
     image: '/images/eatDaBurger.jpg',
     github: 'https://github.com/nhounhou/Eat-Da-Burger',
     deploy: 'https://eatdaburgerunc.herokuapp.com/',
@@ -151,7 +151,7 @@ var tableOfHW = [
   },
   {
     title: 'Subscriptions Tracker',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'Web application to manage your various subscriptions (Tailwind CSS Framework, Sequelize, Fullcalendar.io)',
     image: '/images/subscriptionTracker.jpg',
     github: 'https://github.com/JaredWeaver/Subscription-Tracker',
     deploy: 'https://subscription-trkr.herokuapp.com/',
@@ -164,7 +164,7 @@ var tableOfHW = [
   },
   {
     title: 'Fitness Tracker',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'Web application to keep track of your fitness routines (MongoDB, Mongoose.js)',
     image: '/images/workoutTracker.jpg',
     github: 'https://github.com/nhounhou/WorkoutTracker',
     deploy: 'https://workouttrackerunc.herokuapp.com/',
@@ -177,7 +177,7 @@ var tableOfHW = [
   },
   {
     title: 'Progressive Budget',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'web application to manage your personnal budget (MongoDB, indexedDB)',
     image: '/images/quickVideo.gif',
     github: 'https://github.com/nhounhou/budgettracker',
     deploy: 'https://budgettrackerunc.herokuapp.com/',
@@ -190,7 +190,7 @@ var tableOfHW = [
   },
   {
     title: 'Employee Directory',
-    description: 'Quiz game base on Coding questions (Playing with DOM element)',
+    description: 'Web application to show the company employee list (React.js)',
     image: '/images/Animation.gif',
     github: 'https://github.com/nhounhou/employee-directory',
     deploy: 'https://nhounhou.github.io/employee-directory/',
@@ -203,8 +203,8 @@ var tableOfHW = [
   },
   {
     title: 'React Portfolio',
-    description: 'gather all the project that have been made during the BootCamp in a React app',
-    image: '/images/ResponsivePortfolio.jpg',
+    description: 'Conversion of the previous portfolio into Recat application',
+    image: '/images/ReactPortfolio.gif',
     github: 'https://github.com/nhounhou/Portfolio',
     deploy: 'https://nhounhou.github.io/Portfolio/index.html',
     JS: 84,
