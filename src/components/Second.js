@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Project from "./Project";
-import AlertContext from "./../utils/AlertContext";
+import AlertContext from "../utils/AlertContext";
 import './second.css';
 import { FaGit, FaLaptopCode } from 'react-icons/fa';
 

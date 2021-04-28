@@ -5,7 +5,11 @@ import { RiAtLine } from 'react-icons/ri';
 
 const Footer = () => (
   <div className="footer">
-    <p>Michel Nhouyvanisvong <TiSocialFacebook /> <VscGithub /> <RiAtLine /></p>
+    <p>Michel Nhouyvanisvong 
+      <a href='https://www.facebook.com/nhounhou/'><TiSocialFacebook /></a>
+      <a href='https://github.com/nhounhou'><VscGithub /></a>
+      <a href='mailto:mnhounhou@gmail.com'><RiAtLine /></a>
+    </p>
   </div>
 );
 

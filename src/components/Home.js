@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Footer from "./Footer";
+import { DiBootstrap,DiCss3,DiGithubBadge,DiHeroku,DiHtml5,DiJsBadge,DiNodejsSmall,DiNpm,DiReact } from "react-icons/di";
 
 function Home() {
   return (
@@ -9,6 +10,9 @@ function Home() {
         <div className="title">Welcome to Michel Nhouyvanisvong Page App!</div>
         <section>
         <p>Entry Level Full Stack developer</p>
+        <h2><DiJsBadge/><DiHtml5/><DiBootstrap/><DiCss3/></h2>
+        <h2><DiNodejsSmall/><DiNpm/></h2>
+        <h2><DiReact/><DiGithubBadge/><DiHeroku/></h2>
         </section>
         <Footer />
     </Wrapper>
