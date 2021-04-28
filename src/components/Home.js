@@ -6,7 +6,7 @@ import { DiBootstrap,DiCss3,DiGithubBadge,DiHeroku,DiHtml5,DiJsBadge,DiNodejsSma
 function Home() {
   return (
     <Wrapper>
-        <img src="images/HeadshotNew.jpg" alt="headshot" width="auto" height="300" ></img>
+        <img src={process.env.PUBLIC_URL +"/images/HeadshotNew.jpg"} alt="headshot" width="auto" height="300" ></img>
         <div className="title">Welcome to Michel Nhouyvanisvong Page App!</div>
         <section>
         <p>Entry Level Full Stack developer</p>

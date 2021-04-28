@@ -4,11 +4,12 @@ import AlertContext from "../utils/AlertContext";
 import './second.css';
 import { FaGit, FaLaptopCode } from 'react-icons/fa';
 
+
 var tableOfHW = [
   {
     title: 'Responsive Portfolio',
     description: 'gather all the project that have been made during the BootCamp (introduction HTML and CSS)',
-    image: 'images/ResponsivePortfolio.jpg',
+    image: '/images/ResponsivePortfolio.jpg',
     github: 'https://github.com/nhounhou/Portfolio',
     deploy: 'https://nhounhou.github.io/Portfolio/index.html',
     JS: 0,
@@ -21,7 +22,7 @@ var tableOfHW = [
   {
     title: 'Password Generator',
     description: 'with choice of settings parameters (Introduction to JavaScript ES5)',
-    image: 'images/PasswordGenerator.jpg',
+    image: '/images/PasswordGenerator.jpg',
     github: 'https://github.com/nhounhou/PasswordGenerator',
     deploy: 'https://nhounhou.github.io/PasswordGenerator/index.html',
     JS: 51,
@@ -34,7 +35,7 @@ var tableOfHW = [
   {
     title: 'Coding Quizz',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/CodeQuiz.jpg',
+    image: '/images/CodeQuiz.jpg',
     github: 'https://github.com/nhounhou/CodeQuiz',
     deploy: 'https://nhounhou.github.io/CodeQuiz/',
     JS: 83,
@@ -43,11 +44,11 @@ var tableOfHW = [
     API: 0,
     Other: 0,
     FrameName: ''
-},
+  },
   {
     title: 'Work Day Scheduler',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/WorkDayScheduler.jpg',
+    image: '/images/WorkDayScheduler.jpg',
     github: 'https://github.com/nhounhou/WorkDayScheduler',
     deploy: 'https://nhounhou.github.io/WorkDayScheduler/',
     JS: 55,
@@ -56,11 +57,11 @@ var tableOfHW = [
     API: 0,
     Other: 0,
     FrameName: ''
-},
+  },
   {
     title: 'Weather Dashboard',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/WeatherDash.jpg',
+    image: '/images/WeatherDash.jpg',
     github: 'https://github.com/nhounhou/WeatherDashBoard',
     deploy: 'https://nhounhou.github.io/WeatherDashBoard/',
     JS: 72,
@@ -69,11 +70,11 @@ var tableOfHW = [
     API: 2,
     Other: 0,
     FrameName: ''
-},
+  },
   {
     title: 'Get Coupons',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/Project1.jpg',
+    image: '/images/Project1.jpg',
     github: 'https://github.com/Callingrapher/ProjectTheFirst',
     deploy: 'https://callingrapher.github.io/ProjectTheFirst',
     JS: 32,
@@ -82,11 +83,11 @@ var tableOfHW = [
     API: 2,
     Other: 15,
     FrameName: 'Foundation'
-},
+  },
   {
     title: 'Good Readme Generator',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/ReadmeGen.gif',
+    image: '/images/ReadmeGen.gif',
     github: 'https://github.com/nhounhou/ReadmeGenerator',
     deploy: 'https://nhounhou.github.io/ReadmeGenerator/',
     JS: 100,
@@ -95,11 +96,11 @@ var tableOfHW = [
     API: 0,
     Other: 0,
     FrameName: ''
-},
+  },
   {
     title: 'Team Profile Generator',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/teamProfile.jpg',
+    image: '/images/teamProfile.jpg',
     github: 'https://github.com/nhounhou/TeamProfileGenerator',
     deploy: '',
     JS: 74,
@@ -108,11 +109,11 @@ var tableOfHW = [
     API: 0,
     Other: 0,
     FrameName: ''
-},
+  },
   {
     title: 'Note Taker',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/noteTaker.jpg',
+    image: '/images/noteTaker.jpg',
     github: 'https://github.com/nhounhou/NoteTaker',
     deploy: 'https://bcsnotetaker.herokuapp.com/',
     JS: 70,
@@ -121,11 +122,11 @@ var tableOfHW = [
     API: 0,
     Other: 0,
     FrameName: ''
-},
+  },
   {
     title: 'Employee Tracker',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/employeeTracker.jpg',
+    image: '/images/employeeTracker.jpg',
     github: 'https://github.com/nhounhou/EmployeeTracker',
     deploy: '',
     JS: 100,
@@ -134,11 +135,11 @@ var tableOfHW = [
     API: 0,
     Other: 0,
     FrameName: ''
-},
+  },
   {
     title: 'Eat-Da-Burger',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/eatDaBurger.jpg',
+    image: '/images/eatDaBurger.jpg',
     github: 'https://github.com/nhounhou/Eat-Da-Burger',
     deploy: 'https://eatdaburgerunc.herokuapp.com/',
     JS: 80,
@@ -147,11 +148,11 @@ var tableOfHW = [
     API: 0,
     Other: 0,
     FrameName: ''
-},
+  },
   {
     title: 'Subscriptions Tracker',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/subscriptionTracker.jpg',
+    image: '/images/subscriptionTracker.jpg',
     github: 'https://github.com/JaredWeaver/Subscription-Tracker',
     deploy: 'https://subscription-trkr.herokuapp.com/',
     JS: 9,
@@ -160,11 +161,11 @@ var tableOfHW = [
     API: 0,
     Other: 70,
     FrameName: 'TailWind'
-},
+  },
   {
     title: 'Fitness Tracker',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/workoutTracker.jpg',
+    image: '/images/workoutTracker.jpg',
     github: 'https://github.com/nhounhou/WorkoutTracker',
     deploy: 'https://workouttrackerunc.herokuapp.com/',
     JS: 59,
@@ -173,11 +174,11 @@ var tableOfHW = [
     API: 0,
     Other: 0,
     FrameName: ''
-},
+  },
   {
     title: 'Progressive Budget',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/quickVideo.gif',
+    image: '/images/quickVideo.gif',
     github: 'https://github.com/nhounhou/budgettracker',
     deploy: 'https://budgettrackerunc.herokuapp.com/',
     JS: 79,
@@ -186,11 +187,11 @@ var tableOfHW = [
     API: 0,
     Other: 0,
     FrameName: ''
-},
+  },
   {
     title: 'Employee Directory',
     description: 'Quiz game base on Coding questions (Playing with DOM element)',
-    image: 'images/Animation.gif',
+    image: '/images/Animation.gif',
     github: 'https://github.com/nhounhou/employee-directory',
     deploy: 'https://nhounhou.github.io/employee-directory/',
     JS: 51,
@@ -199,11 +200,11 @@ var tableOfHW = [
     API: 0,
     Other: 0,
     FrameName: ''
-},
+  },
   {
     title: 'React Portfolio',
     description: 'gather all the project that have been made during the BootCamp in a React app',
-    image: 'images/ResponsivePortfolio.jpg',
+    image: '/images/ResponsivePortfolio.jpg',
     github: 'https://github.com/nhounhou/Portfolio',
     deploy: 'https://nhounhou.github.io/Portfolio/index.html',
     JS: 84,
@@ -212,7 +213,7 @@ var tableOfHW = [
     API: 0,
     Other: 0,
     FrameName: ''
-},
+  },
 ]
 
 function Content() {
@@ -269,7 +270,7 @@ function Content() {
         >
         <h1><p>App Name:</p> {theme.title}</h1>
         <h2><p>Description:</p> {theme.description}</h2>
-        <img src={theme.image} alt={theme.title} width='auto' height='300px'></img>
+        <img src={process.env.PUBLIC_URL + theme.image} alt={theme.title} width='auto' height='300px'></img>
         <h4>Links</h4>
         <h5>Github <a href={theme.github} target='_blank'><FaGit/> </a></h5>
         <h5>Deployment <a href={theme.deploy} target='_blank'><FaLaptopCode/> </a></h5>
