@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
+import styled from "styled-components";
 import Project from "./Project";
-import AlertContext from "./../utils/AlertContext";
-import './second.css';
+import AlertContext from "../utils/AlertContext";
+import Footer from './Footer';
 import { FaGit, FaLaptopCode } from 'react-icons/fa';
+import './second.css';
 
 var tableOfHW = [
   {
@@ -215,9 +217,9 @@ var tableOfHW = [
 },
 ]
 
-function Content() {
+function Second() {
   function icone(type,num,name){
-    switch (type) {
+      switch (type) {
       case 'JS':
         if (num !== 0) {
           const render=`https://img.shields.io/badge/JavaScript-${num}%25-orange`
@@ -242,7 +244,7 @@ function Content() {
           return <img src={render} alt={type}></img>
         }
         break;
-    case 'Frame':                                        
+    case 'Other':                                        
         if (num !== 0){
           const render=`https://img.shields.io/badge/${name}-${num}%25-blue`
           return <img src={render} alt={type}></img>
@@ -251,38 +253,54 @@ function Content() {
     }
   };
 
-  const { onClick, theme, display} = useContext(AlertContext)
-  return (
-    <div className="text-center">
-      {tableOfHW.map((item,index) => (
-      <button onClick={() => onClick(item, true)} className="btn btn-success mx-3">
-        {item.title}
-      </button>
-      ))}
-      <button onClick={() => onClick({}, false)} className="btn btn-outline-danger mx-3">
-        Clear
-      </button>
+  const alert = useContext(AlertContext);
 
-      <Project 
-        style={{ opacity: display ? 1 : 0 }} 
-        type={theme}
-        >
-        <h1><p>App Name:</p> {theme.title}</h1>
-        <h2><p>Description:</p> {theme.description}</h2>
-        <img src={theme.image} alt={theme.title} width='auto' height='300px'></img>
-        <h4>Links</h4>
-        <h5>Github <a href={theme.github} target='_blank'><FaGit/> </a></h5>
-        <h5>Deployment <a href={theme.deploy} target='_blank'><FaLaptopCode/> </a></h5>
-        <div>
-          {icone('JS',theme.JS,'')}
-          {icone('HTML',theme.HTML,'')}
-          {icone('CSS',theme.CSS,'')}
-          {icone('API',theme.API,'')}
-          {icone('Frame',theme.Other,theme.FrameName)}
-        </div>
-      </Project>
+  return (
+    <div className='Wrapper'>
+      <span>Portfolio</span>
+      <section className='portfolio'>
+        {tableOfHW.map((item,index) => (
+          <div className='project' key={index}>
+            <row>
+              <div>
+                <h1>{item.title}</h1>
+                <h3>{item.description}</h3>
+                <img className='HWPicture' src={item.image} width='auto' height='300px' alt={item.title}></img>
+                <h4>Links</h4>
+                <h5>Github <a href={item.github} target='_blank'><FaGit/> </a></h5>
+                <h5>Deployment <a href={item.deploy} target='_blank'><FaLaptopCode/> </a></h5>
+              </div>
+              <div>
+                {icone('JS',item.JS,'')}
+                {icone('HTML',item.HTML,'')}
+                {icone('CSS',item.CSS,'')}
+                {icone('API',item.API,'')}
+                {icone('Frame',item.Other,item.FrameName)}
+              </div>
+            </row>
+          </div>
+        ))}
+      </section>
+      <Footer />
     </div>
   );
 }
 
-export default Content;
+// const Wrapper = styled.div`
+//   background-color: #00bfff;
+//   padding: 20px;
+
+//   span {
+//     color: #fff;
+//     font-size: 40px;
+//   }
+
+//   section {
+//     color: #fff;
+//   }
+// `;
+
+// min-height: calc(100vh - 50px);
+// height: 100vh;
+
+export default Second;

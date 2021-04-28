@@ -1,4 +1,4 @@
-.Wrapper {
+.text-center, body{
     background-color: #00bfff;
     padding: 20px;
 }
@@ -18,8 +18,16 @@ section {
     margin-bottom: 10px;
 }
 
+button {
+    margin-top: 10px;
+}
+
 h1 {
     background-color: burlywood;
+}
+
+h2 {
+    color: black;
 }
 
 h3 {
@@ -29,17 +37,24 @@ h3 {
 }
 
 h4 {
+    color: cornflowerblue;
     text-decoration: underline;
     text-decoration-color: darkblue;
     margin-top: 120px;
 }
 
 h5 {
+    color: blue;
     padding-left: 20px;
 }
 
 a {
     font-size: 22px;
+}
+
+p {
+    text-decoration: underline;
+    text-decoration-color: crimson;
 }
 
 .portfolio {
